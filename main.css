@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    background-color: #333;
+}
+
+.sky{
+    height: 35vh;
+    background-color:  cornflowerblue;
+    position: relative;
+    overflow: hidden;
+}
+
+.cluod-1 {
+    width: 200px;
+    height: 130px;
+    position: absolute;
+    right:50px;
+    top: 15px;
+    animation-name: cluod-1;
+    animation-duration: 30s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.cluod-2 {
+    width: 200px;
+    height: 130px;
+    position: absolute;
+    left:50px;
+    top:70px;
+    animation-name: cluod-2;
+    animation-duration: 30s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cluod-1 {
+    100%{
+        right:1400px;
+    }
+}
+
+@keyframes cluod-2 {
+    100%{
+        left:1400px;
+    }
+}
+
+
+.gross {
+    height: 30vh;
+    background-color: green;
+}
+
+.road {
+    height: 31vh;
+    background-color: gray;
+    position: relative;
+    margin: 2vh auto 2vh auto;
+    overflow: hidden;
+}
+
+hr {
+    border: 5px dashed #fff;
+    position: absolute;  
+    width: 100%; 
+    top: 100px;
+    border-left: none;
+    border-right: none;
+}
