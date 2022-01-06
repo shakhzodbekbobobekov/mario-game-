@@ -70,3 +70,50 @@ hr {
     border-left: none;
     border-right: none;
 }
+
+
+.mario {
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation-name: mario;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+   animation-delay: 1s;
+}
+
+@keyframes mario{
+    0% {
+        left: 0px;
+    }
+
+    100% {
+        left: 2000px;
+    }
+}
+
+.luigi {
+    right: -100px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    animation-name: mario2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-iteration-count: alternate-reverse;
+    animation-delay: 1.3s;
+
+}
+
+@keyframes mario2 {
+    0% {
+        right: -2000px;
+    }
+
+    100% {
+        right: 2000px;
+    }
+}
